@@ -1,0 +1,84 @@
+
+  .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    max-width: 550px;
+    padding: 5px;
+  }
+  
+  .event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 30px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event .event-description{
+    width: 100px;
+    color: red;
+  }
+  
+  .event .event-right h3.event-title {
+    width: 255px;
+    font-size: 16px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #f7ae50;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 16px;
+    width: 100px;
+  }
+  
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }

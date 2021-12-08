@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    place-items: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thinker {
+    background-image: url(images/sunset.jpg);
+    height: 70vh;
+    width: 99vw;
+}
+
+#text{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0.5%;
+    margin-right: 70%;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 30px black;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 img:hover{
+    transform: scale(1.02);    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-links li:hover {
+    transform: scale(1.3);
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 3px;
+    visibility: hidden;
+}
+
+.icones{
+    display: flex;
+    justify-content: right;
+    padding-right: 10%;
+
+}
+
+.fab{
+    color: white;
+    font-size: 50px;
+    padding-right: 40px;
+}
+
+.fa-skype{
+    color: #00AFF0;
+    font-size: 40px;
+}
+
+.fas{
+    color: white;
+    font-size: 50px;
+}
+
+.backdrop{
+    display: flex;
+    width: 99vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    width: 500px;
+    height: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+}
+
+.cards{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    column-gap: 10%;
+
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    width: 100%;
+}
+
+.container2 {
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+}
+
+.box {
+    width:100%;
+    display: block;
+}
+
+.details {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.covid{
+    color:red;
+}
+
+.card1 {
+    max-width: 550px;
+    grid-column: 1;
+    grid-row: 8;
+}
+
+.card2 {
+    max-width: 550px;
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.card3 {
+    min-width: 450px;
+    max-width: 550px;
+    grid-column: 3;
+    grid-row: 8;
+}
+
+.row-striped:nth-of-type(odd){
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+  }
+  
+  .row-striped:nth-of-type(even){
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+  }
+  
+  .row-striped {
+      padding: 15px 0;
+  }
+
+  /* COTISATIONS BUTTON*/
+
+  @import url("https://fonts.googleapis.com/css?family=Roboto:900");
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  color: black;
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.centered {
+  position: relative;
+  top: 60px;
+}
+
+.h-button {
+  background: #f7ae50;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+.h-button span {
+  display: inline-block;
+  min-width: 0.3em;
+  text-transform: uppercase;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+.h-button:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.h-button:hover:before, .h-button:focus:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+.h-button:hover span, .h-button:focus span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.h-button:hover span:nth-child(1), .h-button:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+.h-button:hover span:nth-child(2), .h-button:focus span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.h-button:hover span:nth-child(3), .h-button:focus span:nth-child(3) {
+  transition-delay: 0.075s;
+}
+.h-button:hover span:nth-child(4), .h-button:focus span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.h-button:hover span:nth-child(5), .h-button:focus span:nth-child(5) {
+  transition-delay: 0.125s;
+}
+.h-button:hover span:nth-child(6), .h-button:focus span:nth-child(6) {
+  transition-delay: 0.15s;
+}
+
+/*END COTISATION BUTTON*/
+
+
+  .footer {
+      background-color: gray;
+      color: white;
+      text-align: center;
+      align-items: center;
+      height: 5vh;
+  }
+
+ 
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}
