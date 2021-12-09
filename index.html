@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="main.js" async></script>
     <script src="https://kit.fontawesome.com/d44e2c408d.js" crossorigin="anonymous"></script>
-
+    
 </head>
 
 <body>
+  
+ 
     <div class="thinker">
-
         <nav class="navbar">
             <div class="container1">
 
@@ -54,7 +55,6 @@
 
         <div id="text">
         </div>
-
         <div class="icones">
             <a target="_blank" href="https://www.facebook.com/douance.be"><i class="fab fa-facebook-square"></i></a>
             <a target="_blank" href="https://www.google.be/maps/place/douance.be+asbl/@50.8089166,4.4405545,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3db045daa6eb9:0x77b9ed97b351735!8m2!3d50.8089413!4d4.4427734?hl=fr"><i class="fas fa-map-marked"></i></a>
@@ -199,8 +199,8 @@
                 </div>
             </div>
             <div class="card card3">
-                <div class="container2">
-                    <img class="box" src="images/bordeaux.jpg" alt="bordeaux">
+                <div class="container4">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdouance.be&tabs=timeline&width=450&height=650&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
                 <br>
                 <div class="details">
@@ -221,26 +221,27 @@
             </div>
         </div>
         <br><br>
-
+    
         <footer>
             <div class="footer">
                 © Copyright 2021: Nicolas Biren
             </div>
         </footer>
 
-            <script type="text/javascript">
-                var i=0,text;
-                text = `"souvent plagiée, (mal) imitée, jamais égalée !"`
-
-                function typing() {
-                    if(i<text.length){
-                        document.getElementById("text").innerHTML += text.charAt(i);
-                        i++;
-                        setTimeout(typing,100);
-                    }
-                }
-                typing();
-            </script>
     </div>
+    <script type="text/javascript">
+      var i=0,text;
+      text = `"souvent plagiée, (mal) imitée, jamais égalée !"`
+
+      function typing() {
+          if(i<text.length){
+              document.getElementById("text").innerHTML += text.charAt(i);
+              i++;
+              setTimeout(typing,100);
+          }
+      }
+      typing();
+  </script>
+  
 </body>
 </html>

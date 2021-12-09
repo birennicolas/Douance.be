@@ -11,7 +11,7 @@ body {
 }
 
 .thinker {
-    background-image: url(images/sunset.jpg);
+    background-image: url(images/clouds.jpg);
     height: 70vh;
     width: 99vw;
 }
@@ -76,10 +76,12 @@ nav {
 
 }
 
+
 .fab{
     color: white;
     font-size: 50px;
     padding-right: 40px;
+    padding-left: 40px;
 }
 
 .fa-skype{
@@ -90,6 +92,7 @@ nav {
 .fas{
     color: white;
     font-size: 50px;
+    padding-right: 40px;
 }
 
 .backdrop{
@@ -116,12 +119,11 @@ nav {
 .cards{
     display: grid;
     justify-content: center;
-    width: 100%;
+    width: 99vw;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 2%;
     column-gap: 10%;
-
 }
 
 .card{
@@ -144,6 +146,11 @@ nav {
 .details {
     text-align: center;
     color: rgb(0, 0, 0);
+}
+
+.details iframe{
+    padding-top:40%;
+    margin: 0;
 }
 
 .covid{
