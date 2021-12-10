@@ -62,7 +62,7 @@
     padding-right: 8px;
   }
   
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 767px) {
     .event {
       flex-direction: column;
     }
@@ -80,6 +80,19 @@
   
     .event .event-left .event-date {
       padding: 10px 0;
+    }
+
+    .event .event-right h3.event-title {
+      width: 40vw;
+      font-size: 14px;
+      margin: 10px 0 10px 0;
+      color: #218bbb;
+      text-transform: uppercase;
+    }
+
+    .event .event-right .event-timing {
+      width: 90px;
+      height: auto;
     }
   }
 

@@ -77,12 +77,11 @@ nav {
 
 }
 
-
 .fab{
     color: white;
     font-size: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 2vw;
+
 }
 
 .fa-skype{
@@ -93,7 +92,10 @@ nav {
 .fas{
     color: white;
     font-size: 50px;
-    padding-right: 40px;
+}
+
+.fa-map-marked{
+    padding-right: 2vw;
 }
 
 .backdrop{
@@ -276,7 +278,7 @@ a {
 
 
 
-@media all and (max-width:768px) {
+@media all and (max-width:767px) {
 
     
     body {
@@ -297,12 +299,12 @@ a {
     }
 
     .container1{
-        width: 100vw;
+        width: 80vw;
         height: auto;
     }
 
     .container1 img{
-        width: 90vw;
+        width: 80vw;
     }
     
 
@@ -315,19 +317,33 @@ a {
         display: none;
     }
 
+    .burger div{
+        display: block;
+    }
+
     #text{
-        width: 100vw;
+        width: 98vw;
+        justify-content: center;
+        align-items: center;
     }
 
     .icones{
+        justify-content: space-between;
+        align-items: center;
         padding-top: 2vh;
         padding-bottom: 2vh;
+        padding-left: 10%;
     }
+
+    
+
     .backdrop{
         width: 100vw;
         height: auto;
         padding-top: 2vh;
         padding-bottom: 5vh;
+        justify-content: center;
+        align-items: center;
     }
 
     .container3{
@@ -380,12 +396,13 @@ a {
     }
 
     .details{
-       
+       width: 100vw;
+       height: auto;
 
     }
 
     .footer {
-        background-color: gray;
+        background-color:#f7ae50;
         color: white;
         text-align: center;
         align-items: center;
