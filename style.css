@@ -14,6 +14,7 @@ body {
     background-image: url(images/sunset.jpg);
     background-size: cover;
     height: 70vh;
+    width: 100vw;
 }
 
 #text{
@@ -265,14 +266,14 @@ a {
 
 
   .footer {
-      background-color: gray;
-      color: white;
+
+  background-color: #f7ae50;
+      color: black;
       text-align: center;
       align-items: center;
       height: 5vh;
   }
 
- 
 
 
 @media all and (max-width:768px) {
@@ -289,9 +290,9 @@ a {
     }
 
     .thinker {
-        background-image: url(images/sunset.jpg);
-        background-repeat: no-repeat;
-        height: 70%;
+        background-image: none;
+        background-color: rgb(201, 75, 3);
+        height: 70vh;
         width: 100vw;
     }
 
@@ -392,5 +393,3 @@ a {
         height: 5vh;
     }
 }
-
-
