@@ -62,7 +62,7 @@
     padding-right: 8px;
   }
   
-  @media (max-width: 550px) {
+  @media all and (max-width: 768px) {
     .event {
       flex-direction: column;
     }
@@ -82,3 +82,5 @@
       padding: 10px 0;
     }
   }
+
+  

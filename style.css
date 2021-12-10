@@ -11,9 +11,9 @@ body {
 }
 
 .thinker {
-    background-image: url(images/clouds.jpg);
+    background-image: url(images/sunset.jpg);
+    background-size: cover;
     height: 70vh;
-    width: 99vw;
 }
 
 #text{
@@ -66,7 +66,7 @@ nav {
     height: 5px;
     background-color: white;
     margin: 3px;
-    visibility: hidden;
+    display: none;
 }
 
 .icones{
@@ -273,22 +273,124 @@ a {
   }
 
  
-@media screen and (max-width:1024px){
+
+
+@media all and (max-width:768px) {
+
+    
+    body {
+        display: block;
+        margin: 0;
+        padding:0;
+        place-items: center center;
+        font-family: 'Poppins', sans-serif;
+        width: 100vw;
+        height: auto;
+    }
+
+    .thinker {
+        background-image: url(images/sunset.jpg);
+        background-repeat: no-repeat;
+        height: 70%;
+        width: 100vw;
+    }
+
+    .container1{
+        width: 100vw;
+        height: auto;
+    }
+
+    .container1 img{
+        width: 90vw;
+    }
+    
+
+    .a .navbar-brand{
+        width: 100vw;
+        height: auto;
+    }
+
     .nav-links{
-        width: 60%;
+        display: none;
+    }
+
+    #text{
+        width: 100vw;
+    }
+
+    .icones{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .backdrop{
+        width: 100vw;
+        height: auto;
+        padding-top: 2vh;
+        padding-bottom: 5vh;
+    }
+
+    .container3{
+        width: 90vw;
+        height: auto;
+    }
+
+    .cards{
+        display:block;
+        justify-content: center;
+        width: 100vw;
+        padding-top: 2%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .card{
+        display: block;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.18);
+        width: 100vw;
+        padding-bottom: 5vh;
+    }
+   
+    .card1 {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .card2 {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .card3 {
+        display: none;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container2{
+        width: 100vw;
+        height: auto;
+    
+    }
+
+    .container4 {
+        width: 100vw;
+    }
+
+    .details{
+       
+
+    }
+
+    .footer {
+        background-color: gray;
+        color: white;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
     }
 }
 
-@media screen and (max-width:768px) {
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #5d4954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    }
-}
+
