@@ -55,12 +55,12 @@ nav {
 .nav-links a{
     color: white;
     letter-spacing: 4px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .nav-links li:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .burger div{
@@ -75,7 +75,6 @@ nav {
     display: flex;
     justify-content: right;
     padding-right: 10%;
-
 }
 
 .fab{
@@ -102,7 +101,7 @@ nav {
 
 .backdrop{
     display: flex;
-    width: 99vw;
+    width: 100%;
     height: 30vh;
     justify-content: center;
     align-items: center;
@@ -124,11 +123,11 @@ nav {
 .cards{
     display: grid;
     justify-content: center;
-    width: 99vw;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 2%;
-    column-gap: 10%;
+    column-gap: 2vw;
+    width: 100%;
 }
 
 .card{
@@ -163,22 +162,24 @@ nav {
 }
 
 .card1 {
-    max-width: 550px;
-    grid-column: 1;
-    grid-row: 8;
+   width: 30vw;
+   grid-column: 1;
 }
 
 .card2 {
-    max-width: 550px;
-    grid-column: 2;
-    grid-row: 8;
+   width: 30vw;
+   grid-column: 2;
 }
 
 .card3 {
-    min-width: 450px;
-    max-width: 550px;
-    grid-column: 3;
-    grid-row: 8;
+   max-width: 450px;
+   grid-column: 3;
+   margin: 0;
+   padding: 0;
+}
+
+.container4 iframe{
+    max-width: 450px;
 }
 
 .row-striped:nth-of-type(odd){
@@ -199,7 +200,7 @@ nav {
 
   @import url("https://fonts.googleapis.com/css?family=Roboto:900");
 
-a {
+.cotisations a {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: larger;
@@ -494,7 +495,7 @@ a {
     }
 
     .cards{
-        display:block;
+        display: block;
         justify-content: center;
         width: 100vw;
         padding-top: 2%;
@@ -512,16 +513,23 @@ a {
     }
    
     .card1 {
+        display: block;
+        max-width: none;
         width: 100vw;
         height: auto;
+        justify-content: center;
+        align-items: center;
     }
     
     .card2 {
+        display: block;
+        max-width: none;
         width: 100vw;
         height: auto;
     }
     
     .card3 {
+        max-width: none;
         display: none;
         width: 100vw;
         height: auto;
@@ -538,9 +546,10 @@ a {
     }
 
     .details{
+       display: block;
        width: 100vw;
        height: auto;
-
+       justify-content: center;
     }
 
     .footer {
