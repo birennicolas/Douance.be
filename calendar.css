@@ -3,8 +3,7 @@
     box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
     display: flex;
     border-radius: 8px;
-    max-width: 550px;
-    padding: 5px;
+    width:100%;
   }
   
   .event .event-left {
@@ -30,31 +29,32 @@
   
   .event .event-right {
     display: flex;
-    width: 20vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
 
   .event .event-description{
-    width: 100px;
+    width: 25%;
     color: red;
   }
   
   .event .event-right h3.event-title {
-    width: 255px;
+    width: 50%;
     font-size: 16px;
-    margin: 24px 0 10px 0;
+    margin: 24px 5px 10px 5px;
     color: #218bbb;
     text-transform: uppercase;
   }
   
   .event .event-right .event-timing {
+    justify-content: right;
     background: #f7ae50;
     padding: 8px;
     border-radius: 16px;
-    margin: 24px 0;
+    margin: 24px 5px 24px 5px;
     font-size: 16px;
-    width: 100px;
+    width: 25%;
   }
   
   .event .event-right .event-timing img {
@@ -98,15 +98,22 @@
 
   @media all and (min-width:767px) and (max-width:1366px) {
 
+    .events{
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
     .event {
       max-width: none;
-      width: 85vw;
+      width: 100%;
       height: auto;
-      
+      flex-direction: none;
     }
 
     .event .event-left {
-      max-width: 90px;
       padding: 0;
       border-radius: 8px 8px 0 0;
     }
@@ -114,8 +121,6 @@
     .event .event-right {
       display: flex;
       max-width: none;
-      justify-content: center;
-      align-items: center;
     }
 
     .event .event-left .event-date .date,
@@ -129,7 +134,6 @@
     }
 
     .event .event-right h3.event-title {
-      width: 300px;
       font-size: 14px;
       margin: 10px 0 10px 0;
       color: #218bbb;
@@ -137,14 +141,9 @@
     }
 
     .event .event-description{
-      width: 200px;
       color: red;
       padding: 10px;
     }
 
-    .event .event-right .event-timing {
-      width: 70px;
-      height: auto;
-    }
   }
   

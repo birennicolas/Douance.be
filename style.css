@@ -200,7 +200,11 @@ nav {
 
   @import url("https://fonts.googleapis.com/css?family=Roboto:900");
 
-.cotisations a {
+
+
+.centered {
+  position: relative;
+  top: 60px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: larger;
@@ -208,11 +212,6 @@ nav {
   box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   text-decoration: none;
-}
-
-.centered {
-  position: relative;
-  top: 60px;
 }
 
 .h-button {
@@ -422,6 +421,7 @@ nav {
 
 @media all and (min-width:767px) and (max-width:1366px) {
 
+
     body {
         display: block;
         margin: 0;
@@ -545,11 +545,9 @@ nav {
         width: 100vw;
     }
 
-    .details{
-       display: block;
-       width: 100vw;
-       height: auto;
-       justify-content: center;
+    .titre {
+        text-align: center;
+        color: rgb(0, 0, 0);
     }
 
     .footer {
