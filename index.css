@@ -516,8 +516,13 @@ nav {
     }
 
     .nav-links{
-        display: none;
+      display: flex;
+      position: absolute;
+      justify-content:center;
+      width: 230px;
+      height: 100%;
     }
+
 
     .menu-btn{
         display: flex;
