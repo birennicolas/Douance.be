@@ -63,12 +63,62 @@ nav {
     transform: scale(1.1);
 }
 
-.burger div{
-    width: 25px;
-    height: 5px;
-    background-color: white;
-    margin: 3px;
+.menu-btn {
+    position: relative;
     display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /*border: 3px solid #fff;*/
+}
+
+.menu-btn-burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5 px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    padding-right: 10%;
+}
+
+.menu-btn-burger::before,
+
+.menu-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before{
+    transform: translateY(-16px);
+}
+
+.menu-btn-burger::after{
+    transform: translateY(16px);
+}
+
+/* Button ANIMATION */
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .icones{
@@ -200,8 +250,6 @@ nav {
 
   @import url("https://fonts.googleapis.com/css?family=Roboto:900");
 
-
-
 .centered {
   position: relative;
   top: 60px;
@@ -320,11 +368,23 @@ nav {
         display: none;
     }
 
-    .burger div{
-        display: block;
-        padding-right: 2vw;
+    .menu-btn{
+        display: flex;
+        width: 40px;
+        height: 40px;
     }
 
+    .menu-btn-burger {
+        width: 40px;
+    }
+
+    .menu-btn-burger::after{
+        width: 40px;
+    }
+
+    .menu-btn-burger::before{
+        width: 40px;
+    }
 
     #text{
         width: 98vw;
@@ -410,7 +470,7 @@ nav {
     }
 
     .footer {
-        background-color:#16657c;
+        background-color: #f7ae50;
         color: white;
         text-align: center;
         align-items: center;
@@ -459,9 +519,10 @@ nav {
         display: none;
     }
 
-    .burger div{
-        display: block;
+    .menu-btn{
+        display: flex;
     }
+
 
     #text{
         width: 98vw;
