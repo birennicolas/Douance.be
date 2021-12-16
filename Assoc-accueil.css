@@ -200,7 +200,14 @@ padding-bottom: 2vh;
     align-items: center;
 }
 
-.antoine img{
+.antoine a{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.antoine a img{
     border-radius: 50%;
     width: 80%;
 }
@@ -218,7 +225,14 @@ padding-bottom: 2vh;
     align-items: center;
 }
 
-.david img {
+.david a{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.david a img{
     border-radius: 50%;
     width: 80%;
 }
@@ -228,7 +242,7 @@ padding-bottom: 2vh;
 }
 
 .footer {
-    background-color: #f7ae50;
+    background-color: transparent;
     color: white;
     text-align: center;
     align-items: center;
