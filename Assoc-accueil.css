@@ -7,8 +7,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(180deg, rgba(9,90,121,1) 25%, rgba(255,154,0,1) 100%);
-    width: 100vw;
-    height: 100vh;
 }
 
 .entete{
@@ -93,7 +91,7 @@ padding-bottom: 2vh;
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
-    height:60vh;
+    height:auto;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
     color: white;
@@ -103,16 +101,135 @@ padding-bottom: 2vh;
     margin-left: auto;
     margin-right: auto;
     width: 75vw;
-    height:60vh;
+    height:auto;
 }
 
 .insidebien h2{
     text-align: center;
 }
 
+.founders{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 80vw;
+    height:auto;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card1{
+    width: 50%;
+    height: auto;
+    border-right: 2px solid white;
+}
+
+.card2 {
+    width: 50%;
+    height: auto;
+}
+
+.fondateur-titre{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.antenne-titre {
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.fondateur-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.antenne-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.thierry{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thierry img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.thierry h3{
+    display: flex;
+    padding-top: 2vh;
+}
+
+.aurore {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aurore img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.aurore h3{
+    padding-top: 2vh;
+}
+
+.antoine {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.antoine img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.antoine h3{
+    padding-top: 2vh;
+}
+
+.david {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.david img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.david h3{
+    padding-top: 2vh;
+}
+
 .footer {
     background-color: #f7ae50;
-    color: black;
+    color: white;
     text-align: center;
     align-items: center;
     height: 5vh;
