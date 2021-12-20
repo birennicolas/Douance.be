@@ -358,18 +358,30 @@ nav {
         width: 80vw;
     }
     
-
-    .a .navbar-brand{
-        display: none;
-        visibility: hidden;
-    }
-
     .nav-links{
-        display: none;
+        position: absolute;
+        width: 100vw;
+        height: auto;
+        top:0;
+        bottom: 50vh;
+        left:-100vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: 0.3s;
     }
+
+    .nav-links.active{
+        left:0;
+    }
+
 
     .menu-btn{
         display: flex;
+        position: flex-start;
         width: 40px;
         height: 40px;
     }
@@ -400,8 +412,6 @@ nav {
         padding-bottom: 2vh;
         padding-left: 10%;
     }
-
-    
 
     .backdrop{
         width: 100vw;
@@ -509,18 +519,24 @@ nav {
         width: 70vw;
     }
     
-
-    .a .navbar-brand{
+    .nav-links{
+        position: absolute;
         width: 100vw;
         height: auto;
+        top:0;
+        bottom: 50vh;
+        left:-100vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: 0.5s;
     }
 
-    .nav-links{
-      display: flex;
-      position: absolute;
-      justify-content:center;
-      width: 230px;
-      height: 100%;
+    .nav-links.active{
+        left:0;
     }
 
 
