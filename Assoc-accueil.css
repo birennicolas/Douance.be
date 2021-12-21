@@ -543,7 +543,6 @@ nav {
     
     @media all and (min-width:767px) and (max-width:1366px) {
     
-    
         body {
             display: block;
             margin: 0;
@@ -554,21 +553,38 @@ nav {
             height: auto;
         }
     
-        .thinker {
-            background-image: none;
-            background: rgb(9,90,121);
-            background: linear-gradient(180deg, rgba(9,90,121,1) 25%, rgba(255,154,0,1) 100%);
-            height: 80vh;
-            width: 100vw;
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding-bottom: 3vh;
         }
-    
+
+        .entete1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .burger{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: auto;
+        }
+
+        .iconic{
+            width: 100vw;
+            height: auto;
+        }
+
         .container1{
-            width: 80vw;
+            width: 100%;
             height: auto;
         }
     
         .container1 img{
-            width: 70vw;
+            width: 75vw;
         }
         
         .nav-links{
@@ -580,37 +596,149 @@ nav {
             left:-100vw;
             display: flex;
             flex-direction: column;
-            row-gap: 4vh;
+            row-gap: 2vh;
             justify-content: center;
             align-items: center;
             background-color: black;
-            transition: 0.5s;
+            transition: 0.3s;
         }
     
         .nav-links.active{
             left:0;
+            z-index: 1;
         }
     
     
         .menu-btn{
             display: flex;
+            position: flex-start;
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            margin-left: 4vw;
         }
     
+        .menu-btn-burger {
+            width: 50px;
+        }
+    
+        .menu-btn-burger::after{
+            width: 50px;
+        }
+    
+        .menu-btn-burger::before{
+            width: 50px;
+        }
     
         .icones{
             justify-content: space-between;
             align-items: center;
             padding-top: 2vh;
             padding-bottom: 2vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            width: 100%;
+            height: auto;
         }
     
+        .founders{
+            padding-top: 5vh;
+        }
+
+        .fondateur-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .antenne-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+    
+        .cards{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding-top: 2%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+       
+        .card1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            border-right: none;
+        }
+        
+        .card2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            padding-top: 4vh;
+        }
+        
+        .thierry{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4vh;
+        }
+
+        .aurore {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            border-bottom: 2px solid white;
+        }
+
+        .antoine {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+        }
+
+        .david {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
         .footer {
-            background-color:#16657c;
+            background-color: transparent;
             color: white;
             text-align: center;
             align-items: center;
             width: 100vw;
             height: 5vh;
         }
-    
     }
+    
+        
