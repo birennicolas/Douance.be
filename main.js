@@ -4,7 +4,7 @@ let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.toggle('open');
-        navMenu.classList.toggle('active')
+        navMenu.classList.toggle('active');
         menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
