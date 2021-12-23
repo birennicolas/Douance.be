@@ -333,7 +333,7 @@ nav {
     align-items: center;
     position: relative;
     right: -100vw;
-    transition: 0.8s;
+    transition: 0.8s ease-out;
 }
 
 .relocdavid {

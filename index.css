@@ -178,6 +178,13 @@ nav {
     padding-top: 2%;
     column-gap: 2vw;
     width: 100%;
+    position: relative;
+    right: -100vw;
+    transition: 0.8s;
+}
+
+.relocards {
+    right: 0;
 }
 
 .card{

@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
         antoine.classList.add('relocantoine');
     }
 
-    if (scrollValue > 0.93){
+    if (scrollValue > 0.97){
         david.classList.add('relocdavid');
     }
 
