@@ -1,4 +1,7 @@
-const cardss = document.getElementsByClassName('cards');
+const thierry = document.querySelector('.thierry');
+const aurore = document.querySelector('.aurore');
+const antoine = document.querySelector('.antoine');
+const david = document.querySelector('.david');
 
 window.addEventListener('scroll', () => {
 
@@ -7,8 +10,20 @@ window.addEventListener('scroll', () => {
 
     console.log(scrollValue);
 
-    if (scrollValue > 0.90){
-        cardss.style.
-    };
+    if (scrollValue > 0.58){
+        thierry.classList.add('relocthierry');
+    }
+
+    if (scrollValue > 0.70){
+        aurore.classList.add('relocaurore');
+    }
+
+    if (scrollValue > 0.85){
+        antoine.classList.add('relocantoine');
+    }
+
+    if (scrollValue > 0.93){
+        david.classList.add('relocdavid');
+    }
 
 });

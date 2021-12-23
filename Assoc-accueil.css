@@ -241,6 +241,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: -100vw;
+    transition: 0.8s;
+}
+
+.relocthierry {
+    left:0;
 }
 
 .thierry a{
@@ -267,6 +274,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: -100vw;
+    transition: 0.8s;
+}
+
+.relocaurore{
+    left:0;
 }
 
 .aurore img{
@@ -285,6 +299,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: -100vw;
+    transition: 0.8s;
+}
+
+.relocantoine {
+    right:0;
 }
 
 .antoine a{
@@ -310,6 +331,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: -100vw;
+    transition: 0.8s;
+}
+
+.relocdavid {
+    right:0;
 }
 
 .david a{
